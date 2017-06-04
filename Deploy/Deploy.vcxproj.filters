@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{22e21dd1-f9a2-414e-9c2a-ebcf3584a92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{d5574ce0-527a-4835-a8ec-b70f4a257e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{4188a527-e522-40a3-b40f-712576b71610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chaiscript">
+      <UniqueIdentifier>{752a091b-c407-4ccd-ad47-11095e16dab1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Context.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFileWriter.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaiMacros.h">
+      <Filter>Chaiscript</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLibrary.h">
+      <Filter>Chaiscript</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Context.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFileWriter.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLibrary.cpp">
+      <Filter>Chaiscript</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

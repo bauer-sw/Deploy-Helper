@@ -1,0 +1,11 @@
+/Depends.VC.db
+/Debug
+/ipch
+/Release
+/CoreUnitTest/Debug
+/CoreUnitTest/Release
+/Core/Debug
+/Core/Release
+/.vs/Depends/v14/*.suo
+/Deploy/Debug
+/Deploy/Release

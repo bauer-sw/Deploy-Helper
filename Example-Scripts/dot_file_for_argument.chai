@@ -1,0 +1,82 @@
+// ----------------------
+//      Jakob Bauer
+//       (c) 2016 
+//    www.bauer-sw.de
+// ----------------------
+//    cpp@bauer-sw.de
+// ----------------------
+//
+// dot Writer Script
+//
+
+// convert file state to color string
+def fileStateToColor(state) {
+	if(state == NoImportTable || state == Valid) {
+		return "green";
+	}
+	
+	if(state == Valid) {
+		return "green";
+	}
+			
+	if(state == NotFound || state == Error) {
+		return "red";
+	}	
+			
+	if(state == NotHandled) {
+		return "gray";
+	}
+			
+	if(state == Ignored) {
+		return "yellow";
+	}			
+		
+	return "blue";	
+}
+
+// setup search paths
+addSearchPathsFromEnvironment("PATH");
+
+// exclude module names starts with API-MS
+excludeModuleName("(API-MS)(.*)");
+
+// exclude module paths starts with the system root path
+var systemRoot = getValueFromEnvironment("SystemRoot");
+excludeModulePath("(" + escapeForRegExp(systemRoot) + ")(.*)");
+
+// add initial files
+for(var i=2; i < getArgumentCount(); ++i) {
+	var arg = getArgument(i);
+	writeToConsole( arg );
+	
+	addFileToSearchPath( arg );
+	addInitialFile( arg );
+}
+
+// building dependency graph
+writeToConsole( "build graph" );
+var graph = buildGraph();
+
+// create a new dot file
+writeToConsole( "write output file" );
+var output = TextFileWriter("dot_file_for_argument.dot");
+output.writeln("digraph DirectedGraph {");
+for(var i=0; i < graph.getNumOfFiles(); ++i) {
+	var file = graph.getFile(i);
+	writeToConsole(file.getModuleName() + " -> " + file.getFilePath());
+	output.writeln("  \"" + file.getModuleName() + "\" [color=" + fileStateToColor(file.getState()) + "]");
+	
+	var dependsOn = file.getDependencies();
+	for(var j=0; j < dependsOn.size(); ++j) {
+    // exclude modules from dot file which is matched witht he excluding patterns
+    if(isExcluded(dependsOn[j],findFile(dependsOn[j]))) {
+      continue;
+    }
+    
+    // write dot file
+		output.writeln("  \"" + file.getModuleName() + "\" -> \"" + dependsOn[j] + "\"" );
+	}
+}
+
+// finish the dot file
+output.writeln("}");

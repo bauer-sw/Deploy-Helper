@@ -1,0 +1,12 @@
+prefix=C:/Users/jb/Documents/Visual Studio 2015/Projects/Depends/3rdParty/ChaiScript-5.8.1
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: chaiscript
+Description: ChaiScript is a scripting language that easily embeds into your existing C++ applications. It's built to be flexible and dynamic, yet still maintain the type-safety you expect as a C++ user. It can natively use classes, methods, and attributes, even if the class inherits functionality from a parent class. 
+Version: 5.8.1
+Requires:
+Conflicts:
+Libs: 
+Cflags: -I${includedir}

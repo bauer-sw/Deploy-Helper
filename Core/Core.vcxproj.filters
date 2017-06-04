@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Command Line Interface">
+      <UniqueIdentifier>{1761c585-8300-46de-8e04-88d123537ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{f0122cc8-26cd-40ff-aea5-6013477e562c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{527df40d-c71b-4d0b-8ac3-66ba07bd2da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns">
+      <UniqueIdentifier>{7fe89cda-12be-4588-9f15-5ea8a29d1a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI">
+      <UniqueIdentifier>{a7385e99-99db-4a0e-bf9a-8f707dc285ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{4517f4ae-9610-4728-8a77-dd7183a69f54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>Command Line Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="StringView.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Writer.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamReader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamWriter.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arguments.h">
+      <Filter>Command Line Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="StringView.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveProperty.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Writer.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="TupleReaderWriter.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualProperty.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferencedProperty.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamReader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamReaderT.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamWriter.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamWriterT.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

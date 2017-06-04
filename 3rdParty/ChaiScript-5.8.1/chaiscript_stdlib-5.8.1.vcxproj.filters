@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jb\Documents\Visual Studio 2015\Projects\Depends\3rdParty\ChaiScript-5.8.1\src\chaiscript_stdlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jb\Documents\Visual Studio 2015\Projects\Depends\3rdParty\ChaiScript-5.8.1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C2D952EA-499F-3313-BF32-7D3A23A667DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
